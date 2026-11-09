@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>لوحة الإدارة</title><link rel="icon" href="/logo.png">
+<style>
+:root{--bg:#14110f;--card:#1e1a17;--fg:#efede8;--mut:#a39b90;--red:#c4333a;--gold:#b3925f;--ln:#3a332d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 Tajawal,"Segoe UI",Tahoma,sans-serif}
+input,select,textarea,button{font:inherit;color:inherit}input,select,textarea{width:100%;padding:9px;background:#14110f;border:1px solid var(--ln)}
+button{cursor:pointer;background:none;border:1px solid var(--mut);padding:6px 14px}button.p{background:var(--red);border-color:var(--red);color:#fff}button.d{border-color:#7a2b2f;color:#e58}
+.top{display:flex;gap:12px;align-items:center;padding:10px 4vw;border-bottom:1px solid var(--ln);flex-wrap:wrap}.top img{width:40px;border-radius:50%}
+nav{display:flex;flex-wrap:wrap;gap:6px;padding:12px 4vw}nav button.on{background:var(--fg);color:var(--bg)}
+main{padding:10px 4vw 60px;max-width:1000px;margin:auto}.card{background:var(--card);padding:18px;margin:14px 0;display:grid;gap:10px}label{display:grid;gap:3px;font-size:14px;color:var(--mut)}label.c{display:flex;gap:8px;align-items:center}label.c input{width:auto}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--ln);flex-wrap:wrap}.row img{width:70px;height:52px;object-fit:cover}.row .t{flex:1;min-width:180px}.mut{color:var(--mut);font-size:14px}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.stat div{background:var(--card);padding:16px}.stat b{font-size:30px;display:block;color:var(--gold)}
+.msg{color:var(--gold);min-height:1.5em}#login{max-width:360px;margin:12vh auto;padding:0 20px}
+</style></head><body>
+<div id="login" hidden><div class="card"><h2 style="margin:0">دخول الإدارة</h2><form id="lf" style="display:grid;gap:10px"><label>رمز الدخول<input id="code" type="password" autocomplete="current-password" required></label><button class="p">دخول</button><div class="msg" id="lm" role="status"></div></form></div></div>
+<div id="app" hidden><div class="top"><img src="/logo.png" alt=""><b>لوحة إدارة نبض الذاكرة</b><span style="flex:1"></span><a href="/" style="color:var(--mut)">عرض الموقع</a><button id="out">خروج</button></div><nav id="nv"></nav><main id="mn"></main></div>
+<script src="/admin.js"></script></body></html>

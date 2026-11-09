@@ -1,0 +1,1 @@
+{"name":"memory-art-dz","version":"1.0.0","private":true,"description":"Nabd Al-Dhakira / Memory Art DZ website","main":"server.js","scripts":{"start":"node server.js"},"engines":{"node":">=22.13"}}
